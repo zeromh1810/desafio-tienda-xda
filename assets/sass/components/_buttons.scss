@@ -1,0 +1,24 @@
+.primary-button {
+    font-family: $raleway;
+    padding:.8em 1em;
+    color: $smoky-black;
+    font-size: $large;
+    border: 1px solid $smoky-black;
+    grid-column: 2 / 6;
+
+    &--small {
+        @extend .primary-button;
+        font-size: $medium;
+    }
+
+    &:hover {
+        @extend .primary-button;
+        border: 1px solid $quick-silver;
+    }
+
+    &:focus {
+        @extend .primary-button;
+        color: quick-silver;
+        border: 1px solid $quick-silver;
+    }
+}
